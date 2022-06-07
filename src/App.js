@@ -23,7 +23,11 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      
+      <div className="homebanner">
+        <h1>MovieLand</h1>
+        <img id="logo" src="/images/sample_logo.png" alt="" />
+      </div>
 
       <div className="search">
         <input
