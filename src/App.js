@@ -3,14 +3,14 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import {LandingHeader} from "./landingpage/landingheader";
+import {LandingPage} from "./landingpager/landingpage";
 
 
 import "./App.css";
 
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
-const App = ({ children }) => {
+const App = () => {
  
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
@@ -29,8 +29,7 @@ const App = ({ children }) => {
   return (
     
     <div className="app">
-      <LandingHeader/>
-
+      <LandingPage/>
     </div>
   );
 };

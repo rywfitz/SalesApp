@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from 'react-js-banner';
 
 import logo from "../soccer_ball.svg";
 
