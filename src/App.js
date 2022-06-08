@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
+import Banner from 'react-js-banner';
+
 import "./App.css";
 
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
@@ -22,20 +24,30 @@ const App = () => {
   };
 
   return (
+    
     <div className="app">
-<<<<<<< HEAD
-      <><div className="homebanner">
-      <h1>MovieLand</h1>
-    </div><div className="search">
+      <Banner
+        title="This is an example banner"
+      />
+    
+      <img id="logo" src="/images/sample_logo.png" alt="" />
+      <div className="homebanner">
+        <h1>MovieLand</h1>
+        
+      </div>
+
+      <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for movies" />
+          placeholder="Search for movies"
+        />
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => searchMovies(searchTerm)} />
-      </div></>
+          onClick={() => searchMovies(searchTerm)}
+        />
+      </div>
 
       {movies?.length > 0 ? (
         <div className="container">
