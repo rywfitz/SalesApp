@@ -23,23 +23,19 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="homebanner">
+<<<<<<< HEAD
+      <><div className="homebanner">
       <h1>MovieLand</h1>
-      </div>
-      
-
-      <div className="search">
+    </div><div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search for movies"
-        />
+          placeholder="Search for movies" />
         <img
           src={SearchIcon}
           alt="search"
-          onClick={() => searchMovies(searchTerm)}
-        />
-      </div>
+          onClick={() => searchMovies(searchTerm)} />
+      </div></>
 
       {movies?.length > 0 ? (
         <div className="container">

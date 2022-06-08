@@ -229,3 +229,16 @@ h1 {
     margin: 1rem;
   }
 }
+
+.homebanner {
+  display: block;
+}
+
+#logo {
+  height: 100px;
+  background: transparent;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
