@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import Banner from 'react-js-banner';
+import {LandingHeader} from "./Components/LandingHeader";
 
 import "./App.css";
 
@@ -26,11 +26,11 @@ const App = () => {
   return (
     
     <div className="app">
-      <Banner
-        title="This is an example banner"
+      <LandingHeader
+        // title="This is an example banner"
       />
     
-      <img id="logo" src="/images/sample_logo.png" alt="" />
+      {/* <img id="logo" src="/images/sample_logo.png" alt="" /> */}
       <div className="homebanner">
         <h1>MovieLand</h1>
         
