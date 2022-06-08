@@ -1,7 +1,15 @@
-import logo from "./images/temp_logo.svg";
+import React from "react";
+import Banner from 'react-js-banner';
 
-class Header extends Component {
+import logo from "../soccer_ball.svg";
+
+export class LandingHeader extends React.Component {
   render() {
-    return <header className="LandingHeader"></header>;
+      return(
+        <header className="LandingHeader">
+            <img src={logo} alt="" />
+        </header>
+      );
   }
 }
+

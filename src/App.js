@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
+
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import Banner from 'react-js-banner';
+import {LandingHeader} from "./components/LandingHeader";
 
 
 import "./App.css";
@@ -28,14 +29,12 @@ const App = ({ children }) => {
   return (
     
     <div className="app">
-      
-      <Banner id="topbanner"
-        title="This is an example banner"
-        
-      />
     
-      <img id="logo" src="/images/sample_logo.png" alt="" />
+      {/* <img id="logo" src="/images/sample_logo.png" alt="" /> */}
       <div className="homebanner">
+      <LandingHeader
+        title="This is an example banner"
+      />
         <h1>MovieLand</h1>
         
       </div>
