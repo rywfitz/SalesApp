@@ -4,11 +4,13 @@ import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 import Banner from 'react-js-banner';
 
+
 import "./App.css";
 
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a";
 
-const App = () => {
+const App = ({ children }) => {
+ 
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
@@ -26,8 +28,10 @@ const App = () => {
   return (
     
     <div className="app">
-      <Banner
+      
+      <Banner id="topbanner"
         title="This is an example banner"
+        
       />
     
       <img id="logo" src="/images/sample_logo.png" alt="" />
