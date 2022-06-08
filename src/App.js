@@ -23,7 +23,10 @@ const App = () => {
 
   return (
     <div className="app">
+      <div className="homebanner">
       <h1>MovieLand</h1>
+      </div>
+      
 
       <div className="search">
         <input
