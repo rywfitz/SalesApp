@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import {LandingHeader} from "./components/LandingHeader";
+import {LandingHeader} from "./landingpage/landingheader";
 
 
 import "./App.css";
@@ -29,17 +29,23 @@ const App = ({ children }) => {
   return (
     
     <div className="app">
-    
-      {/* <img id="logo" src="/images/sample_logo.png" alt="" /> */}
-      <div className="homebanner">
-      <LandingHeader
-        title="This is an example banner"
-      />
-        <h1>MovieLand</h1>
-        
-      </div>
+      <LandingHeader/>
 
-      <div className="search">
+    </div>
+  );
+};
+
+export default App;
+
+
+
+      {/* <img id="logo" src="/images/sample_logo.png" alt="" /> */}
+      {/* <div className="homebanner"> */}
+      {/* <h1>MovieLand</h1> */}
+        
+      {/* </div> */}
+
+      {/* <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -50,9 +56,9 @@ const App = ({ children }) => {
           alt="search"
           onClick={() => searchMovies(searchTerm)}
         />
-      </div>
+      </div> */}
 
-      {movies?.length > 0 ? (
+      {/* {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />
@@ -62,9 +68,4 @@ const App = ({ children }) => {
         <div className="empty">
           <h2>No movies found</h2>
         </div>
-      )}
-    </div>
-  );
-};
-
-export default App;
+      )} */}

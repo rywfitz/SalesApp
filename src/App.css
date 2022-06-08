@@ -17,6 +17,8 @@ body {
   background-color: #212426;
 }
 
+
+
 .app {
   padding: 4rem;
 
@@ -242,3 +244,13 @@ h1 {
   top: 0;
   left: 0;
 }
+
+#LandingHeader {
+  height: 100px;
+  background: transparent;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+

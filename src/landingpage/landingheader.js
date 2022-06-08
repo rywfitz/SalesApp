@@ -8,6 +8,7 @@ export class LandingHeader extends React.Component {
       return(
         <header className="LandingHeader">
             <img src={logo} alt="" />
+            <h1>MovieLand</h1>
         </header>
       );
   }
