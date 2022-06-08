@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
-import {LandingPage} from "./landingpager/landingpage";
+import {LandingPage} from "./landingpage/landingpage";
 
 
 import "./App.css";

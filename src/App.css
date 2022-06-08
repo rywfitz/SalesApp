@@ -245,12 +245,5 @@ h1 {
   left: 0;
 }
 
-#LandingHeader {
-  height: 100px;
-  background: transparent;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+
 
